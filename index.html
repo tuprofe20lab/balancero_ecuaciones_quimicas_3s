@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Química - 3º de Educación Secundaria - Balanceo de Ecuaciones Químicas</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1e293b; margin: 0; padding: 28px; background: #f8fafc; }
+    .sheet { max-width: 860px; margin: 0 auto; background: #fff; padding: 34px 40px; border: 1px solid #cbd5e1; border-radius: 10px; }
+    header { text-align: center; border-bottom: 3px solid #1e3a8a; padding-bottom: 14px; margin-bottom: 22px; }
+    header h1 { margin: 0; font-size: 24px; color: #1e3a8a; text-transform: uppercase; letter-spacing: 1px; }
+    header h2 { margin: 4px 0; font-size: 17px; color: #334155; font-weight: 700; }
+    header h3 { margin: 6px 0 0; font-size: 19px; color: #0f766e; font-weight: 800; }
+    .meta { display: flex; justify-content: space-between; font-size: 13px; color: #475569; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
+    .card { border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; page-break-inside: avoid; }
+    .card-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #cbd5e1; padding-bottom: 6px; margin-bottom: 8px; }
+    .num { background: #1e3a8a; color: #fff; padding: 3px 10px; border-radius: 6px; font-size: 12.5px; font-weight: 700; }
+    .orig { font-size: 15px; color: #0f172a; }
+    .steps { margin: 6px 0 10px 18px; padding: 0; font-size: 13.5px; line-height: 1.5; }
+    .steps li { margin-bottom: 4px; }
+    .result { background: #ecfdf5; border-left: 4px solid #059669; padding: 6px 10px; font-size: 15px; color: #065f46; }
+    .print-bar { text-align: right; margin-bottom: 14px; }
+    .print-btn { background: #1e3a8a; color: #fff; border: none; padding: 9px 16px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+    @media print { body { background: #fff; padding: 0; } .sheet { border: none; padding: 10px; } .print-bar { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="print-bar"><button class="print-btn" onclick="window.print()">🖨 Imprimir / Guardar como PDF</button></div>
+    <header>
+      <h1>Química</h1>
+      <h2>3º de Educación Secundaria</h2>
+      <h3>Balanceo de Ecuaciones Químicas</h3>
+    </header>
+    <div class="meta">
+      <span><strong>Estudiante:</strong> ________________________________________</span>
+      <span><strong>Método:</strong> Tanteo (12 ejercicios)</span>
+    </div>
+    
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 1</span>
+          <span class="orig">Ecuación inicial: <strong>H₂ + O₂ → H₂O</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Empezamos por el Oxígeno: hay 2 en reactivos y 1 en productos. Colocamos un 2 delante del H₂O. <em>(Productos: 2 × 1 = 2 O  |  2 × 2 = 4 H)</em></li><li><strong>Paso 2:</strong> Ahora el Hidrógeno tiene 4 en productos y 2 en reactivos. Colocamos un 2 delante del H₂. <em>(Reactivos: 2 × 2 = 4 átomos de H)</em></li><li><strong>Paso 3:</strong> ¡Comprobamos el inventario! Tanto H como O coinciden en ambos lados. <em>(H: 4 = 4  |  O: 2 = 2)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>2H₂ + O₂ → 2H₂O</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 2</span>
+          <span class="orig">Ecuación inicial: <strong>N₂ + H₂ → NH₃</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Primero el No Metal (Nitrógeno): hay 2 en reactivos y 1 en productos. Ponemos un 2 al NH₃. <em>(Productos: 2 × 1 = 2 N  |  2 × 3 = 6 H)</em></li><li><strong>Paso 2:</strong> Tenemos 6 Hidrógenos en productos. Ponemos un 3 al H₂ en reactivos (3 × 2 = 6). <em>(Reactivos: 3 × 2 = 6 átomos de H)</em></li><li><strong>Paso 3:</strong> Verificación final: síntesis del amoníaco balanceada. <em>(N: 2 = 2  |  H: 6 = 6)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>N₂ + 3H₂ → 2NH₃</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 3</span>
+          <span class="orig">Ecuación inicial: <strong>CH₄ + O₂ → CO₂ + H₂O</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> El Carbono ya está igualado (1 = 1). Para igualar los 4 Hidrógenos, ponemos un 2 al H₂O. <em>(Productos: 2 × 2 = 4 H  |  O totales: 2 + 2 = 4 O)</em></li><li><strong>Paso 2:</strong> Al final el Oxígeno: hay 4 en productos y 2 en reactivos. Ponemos un 2 al O₂. <em>(Reactivos: 2 × 2 = 4 átomos de O)</em></li><li><strong>Paso 3:</strong> ¡Combustión del metano balanceada correctamente! <em>(C: 1 = 1  |  H: 4 = 4  |  O: 4 = 4)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>CH₄ + 2O₂ → CO₂ + 2H₂O</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 4</span>
+          <span class="orig">Ecuación inicial: <strong>Al + O₂ → Al₂O₃</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> El Oxígeno tiene subíndices 2 y 3 (m.c.m. = 6). Ponemos 3 al O₂ y 2 al Al₂O₃. <em>(O: 3 × 2 = 6 en reactivos  |  2 × 3 = 6 en productos)</em></li><li><strong>Paso 2:</strong> Ahora el Aluminio tiene 2 × 2 = 4 en productos. Ponemos un 4 al Al en reactivos. <em>(Reactivos: 4 × 1 = 4 átomos de Al)</em></li><li><strong>Paso 3:</strong> ¡Formación del óxido de aluminio equilibrada! <em>(Al: 4 = 4  |  O: 6 = 6)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>4Al + 3O₂ → 2Al₂O₃</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 5</span>
+          <span class="orig">Ecuación inicial: <strong>Fe + HCl → FeCl₃ + H₂</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Cloro aparece de 3 en 3 (FeCl₃) e Hidrógeno de 2 en 2 (H₂). Su m.c.m. es 6 → ponemos 6 al HCl. <em>(Reactivos: 6 H y 6 Cl disponibles)</em></li><li><strong>Paso 2:</strong> Igualamos Cloro e Hidrógeno en productos: 2 al FeCl₃ y 3 al H₂. <em>(Productos: 2 Fe, 6 Cl, 6 H)</em></li><li><strong>Paso 3:</strong> Finalmente igualamos el Hierro: ponemos 2 al Fe en reactivos. <em>(Reactivos: 2 × 1 = 2 átomos de Fe)</em></li><li><strong>Paso 4:</strong> ¡Ecuación completamente balanceada! <em>(Fe: 2 = 2  |  Cl: 6 = 6  |  H: 6 = 6)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>2Fe + 6HCl → 2FeCl₃ + 3H₂</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 6</span>
+          <span class="orig">Ecuación inicial: <strong>KClO₃ → KCl + O₂</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> El Oxígeno tiene subíndices 3 y 2 (m.c.m. = 6). Cruzamos: 2 al KClO₃ y 3 al O₂. <em>(O: 2 × 3 = 6 en reactivos  |  3 × 2 = 6 en productos)</em></li><li><strong>Paso 2:</strong> El 2 delante de KClO₃ duplicó al Potasio y al Cloro. Ponemos 2 al KCl. <em>(Productos: 2 K y 2 Cl)</em></li><li><strong>Paso 3:</strong> ¡Descomposición del clorato de potasio balanceada! <em>(K: 2 = 2  |  Cl: 2 = 2  |  O: 6 = 6)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>2KClO₃ → 2KCl + 3O₂</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 7</span>
+          <span class="orig">Ecuación inicial: <strong>C₃H₈ + O₂ → CO₂ + H₂O</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Primero el Carbono: hay 3 en reactivos. Ponemos un 3 delante del CO₂. <em>(Productos: 3 × 1 = 3 C)</em></li><li><strong>Paso 2:</strong> Luego el Hidrógeno: hay 8 en reactivos. Ponemos un 4 delante del H₂O (4 × 2 = 8). <em>(Productos: 4 × 2 = 8 H)</em></li><li><strong>Paso 3:</strong> Sumamos el Oxígeno en productos: (3 × 2) + (4 × 1) = 10. Ponemos 5 al O₂. <em>(Reactivos: 5 × 2 = 10 átomos de O)</em></li><li><strong>Paso 4:</strong> ¡Combustión del gas propano balanceada! <em>(C: 3 = 3  |  H: 8 = 8  |  O: 10 = 10)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>C₃H₈ + 5O₂ → 3CO₂ + 4H₂O</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 8</span>
+          <span class="orig">Ecuación inicial: <strong>NaOH + H₂SO₄ → Na₂SO₄ + H₂O</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Empezamos por el Metal (Sodio): hay 2 en productos. Ponemos 2 al NaOH. <em>(Reactivos: 2 Na  |  H totales: 2 + 2 = 4 H)</em></li><li><strong>Paso 2:</strong> El Azufre (S) ya está 1 a 1. Para los 4 Hidrógenos, ponemos 2 al H₂O. <em>(Productos: 2 × 2 = 4 H  |  O totales: 4 + 2 = 6 O)</em></li><li><strong>Paso 3:</strong> ¡Neutralización ácido-base equilibrada! <em>(Na: 2 = 2  |  S: 1 = 1  |  H: 4 = 4  |  O: 6 = 6)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 9</span>
+          <span class="orig">Ecuación inicial: <strong>Ca + H₂O → Ca(OH)₂ + H₂</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> El Calcio está 1 a 1. En productos hay 4 Hidrógenos (2 + 2). Ponemos 2 al H₂O. <em>(Reactivos: 2 × 2 = 4 H  |  2 × 1 = 2 O)</em></li><li><strong>Paso 2:</strong> El Oxígeno también quedó igualado (2 = 2). ¡Ecuación lista! <em>(Ca: 1 = 1  |  H: 4 = 4  |  O: 2 = 2)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>Ca + 2H₂O → Ca(OH)₂ + H₂</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 10</span>
+          <span class="orig">Ecuación inicial: <strong>Fe₂O₃ + C → Fe + CO₂</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> El Oxígeno tiene subíndices 3 y 2 (m.c.m. = 6). Cruzamos: 2 al Fe₂O₃ y 3 al CO₂. <em>(O: 2 × 3 = 6 en reactivos  |  3 × 2 = 6 en productos)</em></li><li><strong>Paso 2:</strong> Ahora hay 2 × 2 = 4 Hierros en reactivos. Ponemos un 4 al Fe en productos. <em>(Productos: 4 × 1 = 4 átomos de Fe)</em></li><li><strong>Paso 3:</strong> Hay 3 Carbonos en productos. Ponemos un 3 al C en reactivos. <em>(Reactivos: 3 × 1 = 3 átomos de C)</em></li><li><strong>Paso 4:</strong> ¡Reducción del óxido de hierro completamente balanceada! <em>(Fe: 4 = 4  |  C: 3 = 3  |  O: 6 = 6)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>2Fe₂O₃ + 3C → 4Fe + 3CO₂</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 11</span>
+          <span class="orig">Ecuación inicial: <strong>P₄ + O₂ → P₂O₅</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Empezamos por el Fósforo (No Metal): hay 4 en reactivos y 2 en productos. Ponemos un 2 al P₂O₅. <em>(Productos: 2 × 2 = 4 P  |  2 × 5 = 10 O)</em></li><li><strong>Paso 2:</strong> Ahora tenemos 10 Oxígenos en productos y 2 en reactivos. Ponemos un 5 al O₂ (5 × 2 = 10). <em>(Reactivos: 5 × 2 = 10 átomos de O)</em></li><li><strong>Paso 3:</strong> ¡Síntesis del pentóxido de difósforo balanceada! <em>(P: 4 = 4  |  O: 10 = 10)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>P₄ + 5O₂ → 2P₂O₅</strong></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <span class="num">Ejercicio 12</span>
+          <span class="orig">Ecuación inicial: <strong>Al(OH)₃ + H₂SO₄ → Al₂(SO₄)₃ + H₂O</strong></span>
+        </div>
+        <ol class="steps"><li><strong>Paso 1:</strong> Paso 1 (Metal - Aluminio): hay 2 en productos. Ponemos un 2 delante de Al(OH)₃. <em>(Reactivos: 2 Al, 6 O y 6 H en Al(OH)₃)</em></li><li><strong>Paso 2:</strong> Paso 2 (No Metal - Azufre): hay 3 en productos. Ponemos un 3 delante de H₂SO₄. <em>(Reactivos: 3 S  |  H totales: 6 + 6 = 12 H)</em></li><li><strong>Paso 3:</strong> Paso 3 (Hidrógeno): tenemos 12 en reactivos. Ponemos un 6 al H₂O (6 × 2 = 12). <em>(Productos: 12 H  |  O totales: 12 + 6 = 18 O)</em></li><li><strong>Paso 4:</strong> ¡Reto final superado! Todos los elementos coinciden a la perfección. <em>(Al: 2 = 2  |  S: 3 = 3  |  H: 12 = 12  |  O: 18 = 18)</em></li></ol>
+        <div class="result">Respuesta balanceada: <strong>2Al(OH)₃ + 3H₂SO₄ → Al₂(SO₄)₃ + 6H₂O</strong></div>
+      </div>
+  </div>
+</body>
+</html>
